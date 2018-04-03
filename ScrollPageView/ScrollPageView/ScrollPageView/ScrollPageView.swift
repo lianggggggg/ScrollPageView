@@ -8,6 +8,15 @@
 
 import UIKit
 
+ class TitleModel: NSObject {
+    var title:String = ""
+    var image:String? = nil
+    override init() {
+        
+    }
+ }
+ 
+ 
 class ScrollPageView: UIView {
 
     /*
@@ -28,6 +37,10 @@ class ScrollPageView: UIView {
     var segmentView:ScrollPageSegmentView? //顶部标签view
     var contentView:ScrollPageContentView? //内容物view
     
+    fileprivate var titleModels:[TitleModel] = []
+    
+    var extraBtnOnClickblock:(() -> ())?  //附加按钮的回调
+    
     //Mark:init
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,10 +50,12 @@ class ScrollPageView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func configScrollPageView(parentViewController:UIViewController,viewControllers: [UIViewController],pageMenuOptions: [ScrollPageViewOption]?){
+    func configScrollPageView(parentViewController:UIViewController,viewControllers: [UIViewController],titleModels:[TitleModel],pageMenuOptions: [ScrollPageViewOption]?){
         
         self.parentViewController = parentViewController
         self.controllerArray = viewControllers
+        
+        self.titleModels = titleModels
         
         if let options = pageMenuOptions {
             configureScrollPageView(options: options)
@@ -52,17 +67,20 @@ class ScrollPageView: UIView {
     
     
     fileprivate func setUpUI(){
-        self.segmentView = ScrollPageSegmentView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: configuration.segmentHeight), titles: ["1","2","3","43415345","5","6341345","7"], configuration: configuration, titleDidClick: { (titleView, index) in
-            
-            
+
+        self.segmentView = ScrollPageSegmentView.init(frame: CGRect.init(x: 0, y: 0, width: self.width, height: configuration.segmentHeight), titles: self.titleModels, configuration: configuration, titleDidClick: { (titleView, index) in
             self.contentView?.collectionView?.setContentOffSet(offSet: CGPoint.init(x: CGFloat(index)*UIScreen.main.bounds.width, y: 0), animation: true)
         })
         
+        self.segmentView?.extraBtnOnClickblock = {() -> () in
+            self.extraBtnOnClickblock?()
+        }
+
         self.addSubview(self.segmentView!)
         
         self.contentView = ScrollPageContentView.init(frame: CGRect.init(x: 0, y: self.segmentView!.frame.maxY, width: self.width, height: self.height - self.segmentView!.frame.maxY), segmentView: self.segmentView!, configuration: configuration, parentViewController: parentViewController!,controllerArray:controllerArray)
         self.addSubview(contentView!)
-        
+                
     }
     
     

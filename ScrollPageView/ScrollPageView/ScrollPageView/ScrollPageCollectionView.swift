@@ -13,7 +13,11 @@ class ScrollPageCollectionView: UICollectionView {
     fileprivate var parentViewController:UIViewController? //总父视图
     fileprivate var segmentView:ScrollPageSegmentView?  //顶部标签栏
     fileprivate var controllerArray:[UIViewController] = [] //数据源
-    
+    {
+        didSet{
+            self.reloadData()
+        }
+    }
     fileprivate var currentChildVC:UIViewController?
     
     fileprivate var forbidTouchToAdjustPosition:Bool = false //当这个属性设置为 true 的时候 就不用处理 scrollView滚动的计算
@@ -23,7 +27,6 @@ class ScrollPageCollectionView: UICollectionView {
     fileprivate var currentIndex:Int = 0
     {
         didSet{
-            
             guard segmentView != nil else {
                 return
             }
@@ -145,14 +148,9 @@ extension ScrollPageCollectionView:UIScrollViewDelegate{
     
     //滚动减速完成时再更新title的位置
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
         let tempProgress = scrollView.contentOffset.x / UIScreen.main.bounds.width
-        
         contentViewDidMove(fromIndex: Int(tempProgress), toIndex: Int(tempProgress), progress: 1.0)
         adjustSegmentTitleOffsetTo(currentIndex: Int(tempProgress))
-        
-//        currentIndex = Int(tempProgress)
-        
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -165,7 +163,6 @@ extension ScrollPageCollectionView:UIScrollViewDelegate{
         if nav is UINavigationController {
             (nav as! UINavigationController).interactivePopGestureRecognizer?.isEnabled = true
         }
-        
     }
 }
 
@@ -187,11 +184,31 @@ extension ScrollPageCollectionView:UICollectionViewDelegate,UICollectionViewDele
     
     //将要加载某个Item时调用的方法
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        print("willDisplay-----\(indexPath)")
+ 
+        let tempProgress = collectionView.contentOffset.x / UIScreen.main.bounds.width
+        let tempIndex = Int(tempProgress)
+        
+        var progress = tempProgress - CGFloat(tempIndex)
+        let deltaX = collectionView.contentOffset.x - oldOffSet
+        
+        if deltaX > 0 {
+            currentIndex = tempIndex + 1
+            oldIndex = tempIndex
+        }else if deltaX < 0{
+            progress = 1 - progress
+            oldIndex = tempIndex + 1
+            currentIndex = tempIndex
+        }else{
+            return
+        }
+        self.controllerArray[oldIndex].viewWillDisappear(true)
+        self.controllerArray[indexPath.row].viewWillAppear(true)
+  
     }
     //已经展示某个Item时触发的方法
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        print("didEndDisplaying-----\(indexPath)")
+        self.controllerArray[indexPath.row].viewDidDisappear(true)
+        self.controllerArray[oldIndex].viewDidAppear(true)
     }
     
 }

@@ -24,7 +24,7 @@ class ScrollPageSegmentView: UIView {
 
     var extraBtnOnClickblock:(() -> ())? //附加按钮点击事件
     
-    var titles:[String] = [] //标题集合
+    var titles:[TitleModel] = [] //标题集合
     
     var titleViews:[PageTitleView] = [] //缓存所有标题label
     var titleWidths:[CGFloat] = []  //缓存计算出来的每个标题的宽度
@@ -107,7 +107,7 @@ class ScrollPageSegmentView: UIView {
         return extra
     }()
 
-    init(frame: CGRect,titles:[String],configuration:ScrollPageViewConfiguration,titleDidClick:@escaping TitleBtnOnClickBlock) {
+    init(frame: CGRect,titles:[TitleModel],configuration:ScrollPageViewConfiguration,titleDidClick:@escaping TitleBtnOnClickBlock) {
         
         self.titles = titles
         
@@ -214,7 +214,10 @@ extension ScrollPageSegmentView{
             titleView.font = configuration.titleViewFont
             titleView.textColor = configuration.normalTitleColor
             titleView.imagePosition = configuration.imagePosition
-            titleView.text = item
+            titleView.text = item.title ?? ""
+
+            titleView.normalImage = UIImage.init(named: "店铺(颜色)")
+            titleView.imagePosition = configuration.imagePosition
             
             let tap = UITapGestureRecognizer.init(target: self, action: #selector(titleViewOnClick(tap:)))
             titleView.addGestureRecognizer(tap)
@@ -229,7 +232,7 @@ extension ScrollPageSegmentView{
     //点击标题view
     @objc func titleViewOnClick(tap:UITapGestureRecognizer){
         
-        var view = tap.view
+        let view = tap.view
         
         guard (view != nil) else {
             return
@@ -334,7 +337,7 @@ extension ScrollPageSegmentView{
     fileprivate func setupScrollViewAndExtraBtn(){
         
         let extraBtnW:CGFloat = 44.0
-        let extraBtnY:CGFloat = 5.0
+        let extraBtnY:CGFloat = 0
         let scrollW = self.extraBtn != nil ? (currentWidth - extraBtnW) : currentWidth
         self.scrollView.frame = CGRect.init(x: 0, y: 0, width: scrollW, height: self.height)
         
@@ -597,7 +600,7 @@ extension ScrollPageSegmentView{
     }
     
     //重新刷新标题的内容
-    func reloadTitlesWithNew(titles:[String]){
+    func reloadTitlesWithNew(titles:[TitleModel]){
         self.scrollView.subviews.forEach({$0.removeFromSuperview()}) //删除所有的子控件
         
         currentIndex = 0

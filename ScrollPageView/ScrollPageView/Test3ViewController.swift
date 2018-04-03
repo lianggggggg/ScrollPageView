@@ -1,14 +1,14 @@
 //
-//  Test2ViewController.swift
+//  Test3ViewController.swift
 //  ScrollPageView
 //
-//  Created by MrLiang on 2018/4/2.
+//  Created by MrLiang on 2018/4/3.
 //  Copyright © 2018年 MrLiang. All rights reserved.
 //
 
 import UIKit
 
-class Test2ViewController: UIViewController {
+class Test3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,6 @@ class Test2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,6 +31,11 @@ class Test2ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 
