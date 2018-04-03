@@ -32,8 +32,8 @@ extension UIView {
             frame = newFrame
         }
     }
-    
-    var width:CGFloat{
+
+    var Lx_width:CGFloat{
         get{
             return self.frame.size.width
         }
@@ -43,8 +43,8 @@ extension UIView {
             frame = newFrame
         }
     }
-    
-    var height:CGFloat{
+
+    var Lx_height:CGFloat{
         get{
             return self.frame.size.height
         }

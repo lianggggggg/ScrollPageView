@@ -50,26 +50,26 @@ class ScrollPageSegmentView: UIView {
     
     //滚动条
     lazy var scrollLine = {() -> UIView? in
-        guard configuration.isShowLine else {
+        guard self.configuration.isShowLine else {
             return nil
         }
         let line = UIView()
         line.isHidden = false
-        line.backgroundColor = configuration.scrollLineColor
+        line.backgroundColor = self.configuration.scrollLineColor
         return line
     }()
     
     //遮罩
     lazy var coverLayer = {() -> UIView? in
         
-        guard configuration.isShowCover else {
+        guard self.configuration.isShowCover else {
             return nil
         }
         
         let cover = UIView()
-        cover.backgroundColor = configuration.coverBackgroundColor
+        cover.backgroundColor = self.configuration.coverBackgroundColor
         cover.layer.masksToBounds = true
-        cover.layer.cornerRadius = configuration.coverCornerRadius
+        cover.layer.cornerRadius = self.configuration.coverCornerRadius
         return cover
     }()
 
@@ -79,7 +79,7 @@ class ScrollPageSegmentView: UIView {
         let scroll = UIScrollView()
         scroll.showsHorizontalScrollIndicator = false
         scroll.scrollsToTop = false
-        scroll.bounces = configuration.isSegmentViewBounces
+        scroll.bounces = self.configuration.isSegmentViewBounces
         scroll.isPagingEnabled = false
         scroll.delegate = self
         return scroll
@@ -95,14 +95,14 @@ class ScrollPageSegmentView: UIView {
 
     
     lazy var extraBtn = {() -> UIButton? in
-        guard configuration.isShowExtraButton else {
+        guard self.configuration.isShowExtraButton else {
             return nil
         }
         
         let extra = UIButton()
         
         extra.addTarget(self, action: #selector(extraBtnOnClick), for: .touchUpInside)
-        extra.setImage(UIImage.init(named: configuration.extraBtnBackgroundImageName != nil ? configuration.extraBtnBackgroundImageName! : ""), for: .normal)
+        extra.setImage(UIImage.init(named: self.configuration.extraBtnBackgroundImageName != nil ? self.configuration.extraBtnBackgroundImageName! : ""), for: .normal)
         extra.backgroundColor = .clear
         return extra
     }()
