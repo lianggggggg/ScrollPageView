@@ -16,12 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        getColorRGBA(color: UIColor.red)
+//        getColorRGBA(color: UIColor.red)
+//
+//        ScrollPageSegmentView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40), titles: [], configuration: ScrollPageViewConfiguration()) { (xx, x) in
+//
+//        }
         
-        ScrollPageSegmentView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40), titles: [], configuration: ScrollPageViewConfiguration()) { (xx, x) in
-            
-        }
-        
+  
     }
 
     override func didReceiveMemoryWarning() {
