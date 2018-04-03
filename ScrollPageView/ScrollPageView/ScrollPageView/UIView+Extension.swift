@@ -33,7 +33,7 @@ extension UIView {
         }
     }
 
-    var Lx_width:CGFloat{
+    var width:CGFloat{
         get{
             return self.frame.size.width
         }
@@ -44,7 +44,7 @@ extension UIView {
         }
     }
 
-    var Lx_height:CGFloat{
+    var height:CGFloat{
         get{
             return self.frame.size.height
         }

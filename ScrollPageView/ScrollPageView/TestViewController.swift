@@ -23,7 +23,9 @@ class TestViewController: UIViewController {
         .isShowExtraButton(true),
         .extraBtnBackgroundImageName("plus"),
         .isShowCover(false),
-        .isShowLine(false)
+        .isShowLine(false),
+        .normalImgColor(.black),
+        .selectedImgColor(.yellow)
     ]
     
     var controllers:[UIViewController] = [{let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Test2ViewController")

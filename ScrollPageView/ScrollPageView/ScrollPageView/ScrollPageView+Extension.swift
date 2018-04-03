@@ -70,6 +70,10 @@ extension ScrollPageView{
                 configuration.imagePosition = value
             case let .animationTime(value):
                 configuration.animationTime = value
+            case let .normalImgColor(value):
+                configuration.normalImgColor = value
+            case let .selectedImgColor(value):
+                configuration.selectedImgColor = value
             }
         }
         
