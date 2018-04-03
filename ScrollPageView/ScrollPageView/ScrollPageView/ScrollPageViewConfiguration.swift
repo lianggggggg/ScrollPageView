@@ -51,6 +51,8 @@ public class ScrollPageViewConfiguration {
     open var segmentHeight:CGFloat = 44.0 //segmentView的高度
     
     open var imagePosition:TitleImagePosition? = nil  //标题中图片的位置
+    open var normalImgColor:UIColor = UIColor.red //默认时图片的颜色
+    open var selectedImgColor:UIColor = UIColor.blue //选中时的图片颜色
     
     public init(){
         

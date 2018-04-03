@@ -218,6 +218,8 @@ extension ScrollPageSegmentView{
 
             titleView.normalImage = UIImage.init(named: "店铺(颜色)")
             titleView.imagePosition = configuration.imagePosition
+            titleView.normalImgColor = configuration.normalImgColor
+            titleView.selectedImgColor = configuration.selectedImgColor
             
             let tap = UITapGestureRecognizer.init(target: self, action: #selector(titleViewOnClick(tap:)))
             titleView.addGestureRecognizer(tap)

@@ -37,4 +37,6 @@ public enum ScrollPageViewOption{
     case selectedTitleColor(UIColor)
     case segmentHeight(CGFloat)
     case imagePosition(TitleImagePosition?)
+    case normalImgColor(UIColor)
+    case selectedImgColor(UIColor)
 }

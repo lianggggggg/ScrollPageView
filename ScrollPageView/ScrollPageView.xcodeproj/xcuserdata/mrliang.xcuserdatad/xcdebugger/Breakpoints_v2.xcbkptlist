@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.45715"
+            timestampString = "544438885.013144"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "159"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.45722"
+            timestampString = "544438885.013217"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.457274"
+            timestampString = "544438885.013273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.457785"
+            timestampString = "544438885.013593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
+            startingLineNumber = "325"
+            endingLineNumber = "325"
             landmarkName = "setUpUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,23 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.457818"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
-            landmarkName = "setUpUI()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.4578511"
+            timestampString = "544438885.0136321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "330"
@@ -298,7 +282,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.457883"
+            timestampString = "544438885.013669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "setUpUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
+            timestampString = "544438885.013706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
+            landmarkName = "setUpTitleViewsPosition()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
+            timestampString = "544438885.013741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "363"
@@ -314,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.4579149"
+            timestampString = "544438885.0137759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.457986"
+            timestampString = "544438885.013811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "355"
-            endingLineNumber = "355"
+            startingLineNumber = "399"
+            endingLineNumber = "399"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458057"
+            timestampString = "544438885.013846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "397"
-            endingLineNumber = "397"
+            startingLineNumber = "407"
+            endingLineNumber = "407"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.4580981"
+            timestampString = "544438885.013881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "405"
-            endingLineNumber = "405"
+            startingLineNumber = "406"
+            endingLineNumber = "406"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458136"
+            timestampString = "544438885.013916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "404"
-            endingLineNumber = "404"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458172"
+            timestampString = "544438885.013952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "370"
-            endingLineNumber = "370"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458208"
+            timestampString = "544438885.0139869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "setUpTitleViewsPosition()"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,23 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458244"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "385"
-            endingLineNumber = "385"
-            landmarkName = "setUpTitleViewsPosition()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ScrollPageView/ScrollPageView/ScrollPageSegmentView.swift"
-            timestampString = "544430942.458279"
+            timestampString = "544438885.014022"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "124"
