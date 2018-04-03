@@ -12,7 +12,6 @@
 		9D01808F207325DE008FB94D /* Test3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01808E207325DE008FB94D /* Test3ViewController.swift */; };
 		9D677A10206B712A00262BAB /* ScrollPageViewOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A0F206B712A00262BAB /* ScrollPageViewOption.swift */; };
 		9D677A12206B805500262BAB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A11206B805500262BAB /* UIView+Extension.swift */; };
-		9D677A14206B817C00262BAB /* ScrollPageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A13206B817C00262BAB /* ScrollPageViewDelegate.swift */; };
 		9D677A16206B8D4200262BAB /* ScrollPageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A15206B8D4200262BAB /* ScrollPageView+Extension.swift */; };
 		9D677A18206B8DCD00262BAB /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A17206B8DCD00262BAB /* PageTitleView.swift */; };
 		9D677A1A206CB06E00262BAB /* ScrollPageSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A19206CB06E00262BAB /* ScrollPageSegmentView.swift */; };
@@ -52,7 +51,6 @@
 		9D01808E207325DE008FB94D /* Test3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3ViewController.swift; sourceTree = "<group>"; };
 		9D677A0F206B712A00262BAB /* ScrollPageViewOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageViewOption.swift; sourceTree = "<group>"; };
 		9D677A11206B805500262BAB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		9D677A13206B817C00262BAB /* ScrollPageViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageViewDelegate.swift; sourceTree = "<group>"; };
 		9D677A15206B8D4200262BAB /* ScrollPageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollPageView+Extension.swift"; sourceTree = "<group>"; };
 		9D677A17206B8DCD00262BAB /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		9D677A19206CB06E00262BAB /* ScrollPageSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageSegmentView.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 			children = (
 				9DB0505A206B3FB4005AE420 /* ScrollPageView.swift */,
 				9D677A15206B8D4200262BAB /* ScrollPageView+Extension.swift */,
-				9D677A13206B817C00262BAB /* ScrollPageViewDelegate.swift */,
 				9D677A19206CB06E00262BAB /* ScrollPageSegmentView.swift */,
 				9D677A1B206E373100262BAB /* ScrollPageContentView.swift */,
 				9DC463CB2071C8EF001CBAB8 /* ScrollPageCollectionView.swift */,
@@ -320,7 +317,6 @@
 				9D677A1C206E373100262BAB /* ScrollPageContentView.swift in Sources */,
 				9DB0502C206B3F2A005AE420 /* AppDelegate.swift in Sources */,
 				9D01808F207325DE008FB94D /* Test3ViewController.swift in Sources */,
-				9D677A14206B817C00262BAB /* ScrollPageViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,7 @@ class PageTitleView: UIView {
     var text:String = ""{
         didSet{
             self.label.text = text
-            let bounds = (text as NSString).boundingRect(with: CGSize.init(width: Double(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font:self.label.font], context: nil)
+            let bounds = (text as NSString).boundingRect(with: CGSize.init(width: Double(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName:self.label.font], context: nil)
             self.titleSize = bounds.size
         }
     }
@@ -109,8 +109,8 @@ class PageTitleView: UIView {
     lazy var label = {() -> UILabel in
         let lbl = UILabel()
         lbl.textAlignment = .center
-        lbl.font = font
-        lbl.textColor = textColor
+        lbl.font = self.font
+        lbl.textColor = self.textColor
         return lbl
     }()
     
