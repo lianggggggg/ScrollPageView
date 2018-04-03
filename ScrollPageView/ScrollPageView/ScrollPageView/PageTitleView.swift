@@ -149,7 +149,7 @@ extension PageTitleView{
         var _width:CGFloat = 0
         
         guard (self.imagePosition != nil) else {
-            return self.titleSize.width
+            return self.titleSize.width > 44 ? self.titleSize.width : 44
         }
         switch self.imagePosition! {
         case .left,.right:
@@ -159,7 +159,8 @@ extension PageTitleView{
         default:
             _width = self.titleSize.width
         }
-        return _width
+
+        return _width > 44 ? _width : 44
     }
     
     //有图后调整界面
