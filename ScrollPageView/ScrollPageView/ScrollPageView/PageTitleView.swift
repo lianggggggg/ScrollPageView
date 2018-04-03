@@ -102,7 +102,7 @@ class PageTitleView: UIView {
     
     lazy var imageView = {() -> UIImageView in
         let imgView = UIImageView()
-        imgView.contentMode = .center
+        imgView.contentMode = .scaleAspectFit
         return imgView
     }()
     

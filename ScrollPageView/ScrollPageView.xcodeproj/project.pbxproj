@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D01808B2071D9AB008FB94D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01808A2071D9AB008FB94D /* TestViewController.swift */; };
 		9D01808D2071F9E5008FB94D /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01808C2071F9E5008FB94D /* Test2ViewController.swift */; };
+		9D01808F207325DE008FB94D /* Test3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D01808E207325DE008FB94D /* Test3ViewController.swift */; };
 		9D677A10206B712A00262BAB /* ScrollPageViewOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A0F206B712A00262BAB /* ScrollPageViewOption.swift */; };
 		9D677A12206B805500262BAB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A11206B805500262BAB /* UIView+Extension.swift */; };
 		9D677A14206B817C00262BAB /* ScrollPageViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D677A13206B817C00262BAB /* ScrollPageViewDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		9D01808A2071D9AB008FB94D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		9D01808C2071F9E5008FB94D /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
+		9D01808E207325DE008FB94D /* Test3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3ViewController.swift; sourceTree = "<group>"; };
 		9D677A0F206B712A00262BAB /* ScrollPageViewOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageViewOption.swift; sourceTree = "<group>"; };
 		9D677A11206B805500262BAB /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9D677A13206B817C00262BAB /* ScrollPageViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageViewDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				9DB0502D206B3F2A005AE420 /* ViewController.swift */,
 				9D01808A2071D9AB008FB94D /* TestViewController.swift */,
 				9D01808C2071F9E5008FB94D /* Test2ViewController.swift */,
+				9D01808E207325DE008FB94D /* Test3ViewController.swift */,
 				9DB0502F206B3F2A005AE420 /* Main.storyboard */,
 				9DB05032206B3F2A005AE420 /* Assets.xcassets */,
 				9DB05034206B3F2A005AE420 /* LaunchScreen.storyboard */,
@@ -316,6 +319,7 @@
 				9D677A18206B8DCD00262BAB /* PageTitleView.swift in Sources */,
 				9D677A1C206E373100262BAB /* ScrollPageContentView.swift in Sources */,
 				9DB0502C206B3F2A005AE420 /* AppDelegate.swift in Sources */,
+				9D01808F207325DE008FB94D /* Test3ViewController.swift in Sources */,
 				9D677A14206B817C00262BAB /* ScrollPageViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

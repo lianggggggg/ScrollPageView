@@ -15,9 +15,15 @@ class TestViewController: UIViewController {
     
     let configuration:[ScrollPageViewOption] = [
         .isShowCover(true),
-        .segmentHeight(60),
+        .segmentHeight(44),
         .isScaleTitleView(true),
-        .scrollLineColor(.red)
+        .scrollLineColor(.red),
+        .isShowImage(true),
+        .imagePosition(.center),
+        .isShowExtraButton(true),
+        .extraBtnBackgroundImageName("plus"),
+        .isShowCover(false),
+        .isShowLine(false)
     ]
     
     var controllers:[UIViewController] = [{let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Test2ViewController")
@@ -26,7 +32,7 @@ class TestViewController: UIViewController {
         }(),{let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Test2ViewController")
             vc.view.backgroundColor = .green
             return vc
-        }(),{let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Test2ViewController")
+        }(),{let vc = Test3ViewController()
             vc.view.backgroundColor = .black
             return vc
         }(),{let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Test2ViewController")
@@ -42,15 +48,23 @@ class TestViewController: UIViewController {
             vc.view.backgroundColor = .gray
             return vc
         }()]
-    var titles = ["1","2","3","4","5","6","7"]
+    var titleModels:[TitleModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+        for i in 0 ..< 7 {
+            let model = TitleModel()
+            model.title = "\(i)----"
+            model.image = "店铺(颜色)"
+            titleModels.append(model)
+        }
+        
+        
         scrollPage = ScrollPageView.init(frame: CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 64))
-        scrollPage?.configScrollPageView(parentViewController: self, viewControllers: controllers, pageMenuOptions: configuration)
+        scrollPage?.configScrollPageView(parentViewController: self, viewControllers: controllers, titleModels: titleModels, pageMenuOptions: configuration)
         self.view.addSubview(scrollPage!)
     }
 
