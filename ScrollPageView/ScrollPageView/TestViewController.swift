@@ -18,12 +18,12 @@ class TestViewController: UIViewController {
         .segmentHeight(44),
         .isScaleTitleView(true),
         .scrollLineColor(.red),
-        .isShowImage(true),
-        .imagePosition(.center),
+//        .isShowImage(true),
+//        .imagePosition(.center),
         .isShowExtraButton(true),
         .extraBtnBackgroundImageName("plus"),
-        .isShowCover(false),
-        .isShowLine(false),
+//        .isShowCover(false),
+//        .isShowLine(false),
         .normalImgColor(.black),
         .selectedImgColor(.yellow)
     ]

@@ -45,7 +45,7 @@ public class ScrollPageViewConfiguration {
     open var coverHeight:CGFloat = 28.0  //遮盖的高度
     open var titleViewMargin:CGFloat = 15.0  //标题之间的宽度
     open var titleViewFont:UIFont = UIFont.systemFont(ofSize: 14) //titleView上字体的大小
-    open var titleViewBigScale:CGFloat = 1.3  //titleView的放大倍数
+    open var titleViewBigScale:CGFloat = 2  //titleView的放大倍数
     open var normalTitleColor:UIColor = UIColor.init(red: 51.0/255.0, green: 53.0/255.0, blue: 75/255.0, alpha: 1.0)  //titleView的title的默认颜色
     open var selectedTitleColor:UIColor = UIColor.init(red: 255.0/255.0, green: 0.0/255.0, blue: 121/255.0, alpha: 1.0)  //titleView的title的选中颜色
     open var segmentHeight:CGFloat = 44.0 //segmentView的高度
